@@ -667,8 +667,8 @@ yolact_base_config = coco_base_config.copy({
     'name': 'lego_dataset',
 
     # Dataset stuff
-    'dataset': coco2017_dataset,
-    'num_classes': len(coco2017_dataset.class_names) + 1,
+    'dataset': lego_dataset,
+    'num_classes': len(lego_dataset.class_names) + 1,
 
     # Image Size
     'max_size': 550,
