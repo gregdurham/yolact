@@ -130,10 +130,10 @@ dataset_base = Config({
 
 lego_dataset = dataset_base.copy({
     'name': 'Lego Dataset',
-    'train_images': './dataset/train',
-    'train_info': './yolo.json',
-    'valid_images': './dataset/train',
-    'valid_info':   './yolo.json',
+    'train_images': '/content/dataset/train',
+    'train_info': '/content/yolo.json',
+    'valid_images': '/content/dataset/train',
+    'valid_info':   '/content/yolo.json',
     'class_names': ('10051','3815c01')
 
 })
