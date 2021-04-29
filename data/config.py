@@ -129,7 +129,7 @@ dataset_base = Config({
 })
 
 lego_dataset = dataset_base.copy({
-    'name': 'Lego Dataset'
+    'name': 'Lego Dataset',
     'train_images': './dataset/train',
     'train_info': './yolo.json',
     'valid_images': './dataset/train',
