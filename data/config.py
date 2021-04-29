@@ -128,6 +128,16 @@ dataset_base = Config({
     'label_map': None
 })
 
+lego_dataset = dataset_base.copy({
+    'name': 'Lego Dataset'
+    'train_images': './dataset/train',
+    'train_info': './yolo.json',
+    'valid_images': './dataset/train',
+    'valid_info':   './yolo.json',
+    'class_names': ('10051','3815c01')
+
+})
+
 coco2014_dataset = dataset_base.copy({
     'name': 'COCO 2014',
     
@@ -654,7 +664,7 @@ coco_base_config = Config({
 # ----------------------- YOLACT v1.0 CONFIGS ----------------------- #
 
 yolact_base_config = coco_base_config.copy({
-    'name': 'yolact_base',
+    'name': 'lego_dataset',
 
     # Dataset stuff
     'dataset': coco2017_dataset,
