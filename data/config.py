@@ -134,7 +134,7 @@ lego_dataset = dataset_base.copy({
     'train_info': '/content/coco.json',
     'valid_images': '/content/dataset/train',
     'valid_info':   '/content/coco.json',
-    'class_names': ('10051','3815c01')
+    'class_names': ('3815c01','10051')
 
 })
 
