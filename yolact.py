@@ -646,6 +646,11 @@ class Yolact(nn.Module):
 
             return pred_outs
         else:
+            if cfg.use_class_existence_loss:
+                pred_outs['classes'] = self.class_existence_fc(outs[-1].mean(dim=(2, 3)))
+
+            if cfg.use_semantic_segmentation_loss:
+                pred_outs['segm'] = self.semantic_seg_conv(outs[0])
             if cfg.use_mask_scoring:
                 pred_outs['score'] = torch.sigmoid(pred_outs['score'])
 

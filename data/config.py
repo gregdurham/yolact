@@ -695,11 +695,11 @@ yolact_base_config = coco_base_config.copy({
     }),
 
     # Mask Settings
-    'mask_type': mask_type.direct,
-    #'mask_alpha': 6.125,
-    #'mask_proto_src': 0,
-    #'mask_proto_net': [(256, 3, {'padding': 1})] * 3 + [(None, -2, {}), (256, 3, {'padding': 1})] + [(32, 1, {})],
-    #'mask_proto_normalize_emulate_roi_pooling': True,
+    'mask_type': mask_type.lincomb,
+    'mask_alpha': 6.125,
+    'mask_proto_src': 0,
+    'mask_proto_net': [(256, 3, {'padding': 1})] * 3 + [(None, -2, {}), (256, 3, {'padding': 1})] + [(32, 1, {})],
+    'mask_proto_normalize_emulate_roi_pooling': True,
 
     # Other stuff
     'share_prediction_module': True,
