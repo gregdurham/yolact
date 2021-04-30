@@ -685,7 +685,7 @@ yolact_base_config = coco_base_config.copy({
         'use_square_anchors': True, # This is for backward compatability with a bug
 
         'pred_aspect_ratios': [ [[1, 1/2, 2]] ]*5,
-        'pred_scales': [[6],[12],[24], [48], [96], [192], [384]],
+        'pred_scales': [[12],[24], [48], [96], [192], [384]],
     }),
 
     # FPN Settings
